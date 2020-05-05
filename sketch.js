@@ -18,7 +18,7 @@ function setup() {
 	
 	paperObject=new paper(200,450,70);
 	groundObject=new ground(width/2,670,width,20);
-	dustbinObj=new dustbin(1200,660);
+	dustbinObj=new dustbin(1200,650);
 	//Create a Ground
 	
 
@@ -26,14 +26,14 @@ function setup() {
 	  element: document.body,
 	  engine: engine,
 	  options: {
-	    width: 1200,
+	    width: 1600,
 	    height: 700,
 	    wireframes: false
 	  }
 	});
 
 	Engine.run(engine);
-	//Render.run(render);
+	Render.run(render);
   
 }
 
@@ -46,6 +46,8 @@ function draw() {
   paperObject.display();
   groundObject.display();
   dustbinObj.display();
+
+  
   
  
   
